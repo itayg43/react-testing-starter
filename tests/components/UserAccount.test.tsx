@@ -17,7 +17,6 @@ describe("UserAccount", () => {
     render(<UserAccount user={user} />);
 
     const button = screen.getByRole("button");
-    expect(button).toBeInTheDocument();
     expect(button).toHaveTextContent(/edit/i);
   });
 

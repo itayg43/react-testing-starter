@@ -6,7 +6,6 @@ describe("Greet", () => {
     render(<Greet name="Itay" />);
 
     const heading = screen.getByRole("heading");
-    expect(heading).toBeInTheDocument();
     expect(heading).toHaveTextContent(/itay/i);
   });
 
@@ -14,7 +13,6 @@ describe("Greet", () => {
     render(<Greet />);
 
     const button = screen.getByRole("button");
-    expect(button).toBeInTheDocument();
     expect(button).toHaveTextContent(/login/i);
   });
 });
